@@ -37,7 +37,7 @@ void* malloc2(int tamanho_memoria) {
 
 // Função atrib2 que realiza a atribuição de ponteiros e gerencia as contagens de referências
 void atrib2(void *endereco, void *endereco2) {
-    // Encontra o índice do bloco de memória associado a 'endereco'
+    // Encontra o índice do bloco de memória associado a "endereco"
     for (int i = 0; i < tamanho; i++) {
         if (referencias[i].endereco == endereco) {
             referencias[i].contagem--;
