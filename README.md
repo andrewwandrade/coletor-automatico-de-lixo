@@ -6,7 +6,7 @@ Implementar um coletor automático de lixo através da técnica de contagem de r
 
 #### Grupo
 <ul>
-    <li>Andrew de Andrade<li>
-    <li>Lara Fernandes<li>
-    <li>Victoria Valicelle<li>
+    <li>Andrew de Andrade</li>
+    <li>Lara Fernandes</li>
+    <li>Victoria Valicelle</li>
 </ul>
