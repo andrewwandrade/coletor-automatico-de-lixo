@@ -61,21 +61,10 @@ void atrib2(void *endereco, void *endereco2) {
     }
 }
 
-// Função dump que imprime o estado atual das referências e coleta o lixo
+// Função dump que imprime o estado atual das referências
 void dump() {
     printf("Estado das referencias:\n");
     for (int i = 0; i < tamanho; i++) {
         printf("Endereco: %p, Contagem: %d\n", referencias[i].endereco, referencias[i].contagem);
-    }
-    
-    // Coleta o lixo (libera a memória de blocos com contagem de referência 0)
-    for (int i = 0; i < tamanho;) {
-        if (referencias[i].contagem == 0) {
-            free(referencias[i].endereco);
-            referencias[i] = referencias[tamanho - 1];
-            tamanho--;
-        } else {
-            i++;
-        }
     }
 }
